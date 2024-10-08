@@ -6,7 +6,7 @@ LoadingScene::LoadingScene(Scene *nextScene) {
   this->nextScene = nextScene;
   LOG_DEBUG("Loading scene constructed. Loading resources.\n");
 }
-
+//want to make some type of inbatween loading message
 LoadingScene::~LoadingScene() { }
 
 void LoadingScene::init() {
