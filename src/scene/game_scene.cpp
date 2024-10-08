@@ -12,12 +12,14 @@
 
 #include "../gameobjects/block.h"
 
+
 // TODO: Lighting
 static GXColor LightColors[] = {
 		{ 0xFF, 0xFF, 0xFF, 0xFF }, // Light color 1
 		{ 0x80, 0x80, 0x80, 0xFF }, // Ambient 1
 		{ 0x80, 0x80, 0x80, 0xFF }  // Material 1
 };
+//is this for the backround idk
 
 GameScene::GameScene(const char* songdir) {
   this->songdir = songdir;
