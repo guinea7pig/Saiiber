@@ -39,6 +39,19 @@ GameScene::GameScene(const char* songdir) {
   // we can use a culling frustum to filter the ones out that are off screen
 }
 
+
+  // load note model only once
+  if (Saber::model == NULL)
+    Saber::model = new Model("Saber.obj");//dont know where to point the model
+
+  
+  // TODO: Decide on the way we should load the blocks of the chart.
+  // Personally, I was thinking we might just be able to make a gameobject for all of them
+  // then have a constant velocity for them to move down the screen
+  // we can use a culling frustum to filter the ones out that are off screen
+}
+
+
 void GameScene::init() {
   GFX_EnableLighting(false);
   GFX_SetBlendMode(MODE_BLEND);
