@@ -44,6 +44,7 @@ void GameScene::init() {
   GFX_SetBlendMode(MODE_BLEND);
   GFX_EnableAlphaTest(true);
   GFX_SetWriteBuffers(true, true, true);
+  GFX_EnableBGColor()//this should set bg color to smthing but idk how to do it
 
   // Set up the projection matrix
   // This creates a perspective matrix with a view angle of 90
