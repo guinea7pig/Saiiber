@@ -39,16 +39,12 @@ GameScene::GameScene(const char* songdir) {
   // we can use a culling frustum to filter the ones out that are off screen
 }
 
-void GFX_EnableBGColor(bool enable) {
-	GX_SetColorUpdate(enable ? GX_TRUE : GX_FALSE);
-} //this is form the gfx program,i might not need to call this
-
 void GameScene::init() {
   GFX_EnableLighting(false);
   GFX_SetBlendMode(MODE_BLEND);
   GFX_EnableAlphaTest(true);
   GFX_SetWriteBuffers(true, true, true);
-  GFX_EnableBGColor()//this should set bg color to smthing but idk how to do it
+  GFX_EnableBGColor()//this should set bg color// dont know what peramtors or ig it called in tthe gfx.h
 
   // Set up the projection matrix
   // This creates a perspective matrix with a view angle of 90
